@@ -1,0 +1,16 @@
+| benchmark                 | file               | line | type | bug-type |
+|---------------------------+--------------------+------+------+----------|
+| cabextract-1.2            | mszipd.c           |  353 | loop |          |
+| cyrus-sasl-2.1.23         | pwcheck_getpwnam.c |   44 | stmt |          |
+| gzip-1.2.4                | gzip.c             |  828 | stmt |          |
+| jasper-1.900.1            | jas_icc.c          |  878 | stmt |          |
+| libgd-GD_2_0_33           | gd_gif_in.c        |  404 | loop |          |
+| libpng-1.2.5              | pngrutil.c         | 1014 | stmt |          |
+| logsurfer-1.5b            | exec.c             |   77 | stmt |          |
+| ncompress                 | compress42.c       |  892 | stmt |          |
+| nstx-1.1-beta3            | nstxd.c            |  121 | stmt |          |
+| optipng-0.6.4             | opngoptim.c        |  507 | stmt |          |
+| polymorph-0.4.0           | polymorph.c        |  120 | stmt |          |
+| tcpdump-3.9.1             | print-rsvp.c       | 1406 | loop |          |
+| wu-ftpd-2.4.2-beta-18-vr8 | realpath.c         |   79 | stmt |          |
+| wu-ftpd-2.5.0             | ftpd.c             | 1264 | stmt |          |
