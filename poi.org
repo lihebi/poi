@@ -1,16 +1,38 @@
-| benchmark                 | file               | line | type | bug-type |
-|---------------------------+--------------------+------+------+----------|
-| cabextract-1.2            | mszipd.c           |  353 | loop |          |
-| cyrus-sasl-2.1.23         | pwcheck_getpwnam.c |   44 | stmt |          |
-| gzip-1.2.4                | gzip.c             |  828 | stmt |          |
-| jasper-1.900.1            | jas_icc.c          |  878 | stmt |          |
-| libgd-GD_2_0_33           | gd_gif_in.c        |  404 | loop |          |
-| libpng-1.2.5              | pngrutil.c         | 1014 | stmt |          |
-| logsurfer-1.5b            | exec.c             |   77 | stmt |          |
-| ncompress                 | compress42.c       |  892 | stmt |          |
-| nstx-1.1-beta3            | nstxd.c            |  121 | stmt |          |
-| optipng-0.6.4             | opngoptim.c        |  507 | stmt |          |
-| polymorph-0.4.0           | polymorph.c        |  120 | stmt |          |
-| tcpdump-3.9.1             | print-rsvp.c       | 1406 | loop |          |
-| wu-ftpd-2.4.2-beta-18-vr8 | realpath.c         |   79 | stmt |          |
-| wu-ftpd-2.5.0             | ftpd.c             | 1264 | stmt |          |
+| benchmark                 | file                  | line | type | bug-type         | Comment    |
+|---------------------------+-----------------------+------+------+------------------+------------|
+| cabextract-1.2            | mszipd.c              |  353 | loop |                  |            |
+| cyrus-sasl-2.1.23         | pwcheck_getpwnam.c    |   44 | stmt |                  |            |
+| gzip-1.2.4                | gzip.c                |  828 | stmt |                  |            |
+| jasper-1.900.1            | jas_icc.c             |  878 | stmt |                  |            |
+| libgd-GD_2_0_33           | gd_gif_in.c           |  404 | loop |                  |            |
+| libpng-1.2.5              | pngrutil.c            | 1014 | stmt |                  |            |
+| logsurfer-1.5b            | exec.c                |   77 | stmt |                  |            |
+| ncompress                 | compress42.c          |  892 | stmt |                  |            |
+| nstx-1.1-beta3            | nstxd.c               |  121 | stmt |                  |            |
+| optipng-0.6.4             | opngoptim.c           |  507 | stmt |                  |            |
+| polymorph-0.4.0           | polymorph.c           |  120 | stmt |                  |            |
+| tcpdump-3.9.1             | print-rsvp.c          | 1406 | loop |                  |            |
+| wu-ftpd-2.4.2-beta-18-vr8 | realpath.c            |   79 | stmt |                  |            |
+| wu-ftpd-2.5.0             | ftpd.c                | 1264 | stmt |                  |            |
+|---------------------------+-----------------------+------+------+------------------+------------|
+| libtasn1-4.7              | decoding.c            |  754 | stmt |                  |            |
+| apache_1.3.32             | mod_include.c         |  372 | loop |                  |            |
+| libgd-GD_2_0_33           | gdft.c                | 1083 | loop |                  | very hard  |
+| samba-3.0.23d             | winbind_nss_solaris.c |  496 | stmt |                  | TO CONFIRM |
+| Mail-SpamAssassin-2.43    | libspamc.c            |  311 | loop |                  |            |
+|---------------------------+-----------------------+------+------+------------------+------------|
+| openssl-1.0.1             | t1_lib.c              | 3997 | stmt |                  | heartbleed |
+|---------------------------+-----------------------+------+------+------------------+------------|
+| git-1.6.2                 | daemon.c              |  417 | stmt |                  |            |
+| libssh-0.5.3              |                       |      |      |                  |            |
+| wireshark-1.6.0           |                       |      |      | infinite-loop    |            |
+| openssl-0.9.8             |                       |      |      | double-free      |            |
+| php-5.5.20                | zend_ts_hash.c        |  142 | stmt | double-free      |            |
+| gnutls-3.3.5              | common.c              |      |      | double-free      |            |
+| krb-1.4.1                 | recvauth.c            |      |      | double-free      |            |
+| libtiff                   | tif_jpeg.c            |      |      |                  |            |
+| xen                       |                       |      |      |                  |            |
+| libxml-2.5.10             |                       |      |      | use-after-free   |            |
+| libguestfs-1.20.6         | inspect-fs.c          |  547 | stmt |                  |            |
+| clamav-0.91.1             | htmlnorm.c            | 1363 | stmt | null-dereference |            |
+
